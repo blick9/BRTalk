@@ -13,26 +13,60 @@
         <!--Chat View Controller-->
         <scene sceneID="bFd-sH-Wwe">
             <objects>
-                <viewController id="35o-R0-qun" customClass="ChatViewController" customModule="BRTalk" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chatView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="35o-R0-qun" customClass="ChatViewController" customModule="BRTalk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Zb-0Y-snP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gBq-YB-zvO">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PBM-ED-IIL">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="add" id="cW4-Ch-cia"/>
+                                    <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="Amo-eJ-Toi"/>
+                                    <barButtonItem style="plain" id="WCm-HT-KaX">
+                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="RLn-Fn-nHV">
+                                            <rect key="frame" x="38" y="7" width="275" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </barButtonItem>
+                                    <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="PZD-tG-JS2"/>
+                                    <barButtonItem style="plain" id="CjJ-VO-tkj">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vAN-ih-Q2f">
+                                            <rect key="frame" x="313" y="7" width="46" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.92771381578947365" green="0.73472791187722619" blue="0.17354837272856033" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <state key="normal" title="Send">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="PBM-ED-IIL" firstAttribute="leading" secondItem="iER-5o-4tR" secondAttribute="leading" id="Pwz-9a-QBu"/>
+                            <constraint firstItem="PBM-ED-IIL" firstAttribute="top" secondItem="gBq-YB-zvO" secondAttribute="bottom" id="Qj1-wL-p50"/>
+                            <constraint firstItem="iER-5o-4tR" firstAttribute="bottom" secondItem="PBM-ED-IIL" secondAttribute="bottom" id="SO6-XN-kAl"/>
+                            <constraint firstItem="PBM-ED-IIL" firstAttribute="trailing" secondItem="iER-5o-4tR" secondAttribute="trailing" id="Uga-17-awk"/>
                             <constraint firstItem="gBq-YB-zvO" firstAttribute="leading" secondItem="iER-5o-4tR" secondAttribute="leading" id="Xo1-5U-xTv"/>
                             <constraint firstItem="gBq-YB-zvO" firstAttribute="top" secondItem="iER-5o-4tR" secondAttribute="top" id="ZrL-e7-Ch5"/>
                             <constraint firstItem="iER-5o-4tR" firstAttribute="trailing" secondItem="gBq-YB-zvO" secondAttribute="trailing" id="aWC-6a-EQw"/>
-                            <constraint firstItem="iER-5o-4tR" firstAttribute="bottom" secondItem="gBq-YB-zvO" secondAttribute="bottom" id="dYP-gF-GZl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iER-5o-4tR"/>
                     </view>
                     <navigationItem key="navigationItem" id="Jq5-eU-nFk"/>
+                    <connections>
+                        <outlet property="tableView" destination="gBq-YB-zvO" id="yDV-5b-QCa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXp-Qt-d3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

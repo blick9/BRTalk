@@ -10,12 +10,14 @@ import UIKit
 
 class User {
     var id: String
+    var name: String
     var phoneNumber: String
-    var profileImage: UIImage
+    var profileImage: UIImage?
     var joinDate: Date
     
-    init(id: String, phoneNumber: String, profileImage: UIImage, joinDate: Date) {
-        self.id = id
+    init(name: String, phoneNumber: String, profileImage: UIImage?, joinDate: Date) {
+        self.id = UUID().uuidString
+        self.name = name
         self.phoneNumber = phoneNumber
         self.profileImage = profileImage
         self.joinDate = joinDate

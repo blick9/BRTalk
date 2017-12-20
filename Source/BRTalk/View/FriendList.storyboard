@@ -32,7 +32,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0KZ-Kl-ey6"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Friends" id="LeL-Tj-X73"/>
+                    <navigationItem key="navigationItem" title="Friends" id="LeL-Tj-X73">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Bu6-XA-vfB">
+                            <connections>
+                                <action selector="addFriendButtonDidTap:" destination="SZR-cb-9k0" id="kr3-Js-mxn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="aSt-nN-EgV" id="IQ6-r3-6Ky"/>
                     </connections>

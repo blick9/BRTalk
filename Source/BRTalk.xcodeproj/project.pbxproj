@@ -17,6 +17,14 @@
 		A78B2E631FEADCC900DF4636 /* ChatListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A78B2E621FEADCC900DF4636 /* ChatListTableViewCell.xib */; };
 		A78B2E651FEADCDC00DF4636 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A78B2E641FEADCDC00DF4636 /* ChatTableViewCell.xib */; };
 		A78B2E671FEADEB700DF4636 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78B2E661FEADEB700DF4636 /* ChatViewController.swift */; };
+		A78B2E691FEAE31200DF4636 /* FriendListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78B2E681FEAE31200DF4636 /* FriendListTableViewCell.swift */; };
+		A78B2E6B1FEAE32A00DF4636 /* ChatListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78B2E6A1FEAE32A00DF4636 /* ChatListTableViewCell.swift */; };
+		A78B2E6D1FEAE33B00DF4636 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78B2E6C1FEAE33B00DF4636 /* ChatTableViewCell.swift */; };
+		A78B2E6F1FEAED3000DF4636 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78B2E6E1FEAED3000DF4636 /* Chat.swift */; };
+		A78B2E711FEAF17100DF4636 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78B2E701FEAF17100DF4636 /* Photo.swift */; };
+		A78B2E751FEAF64600DF4636 /* MyChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78B2E741FEAF64600DF4636 /* MyChatList.swift */; };
+		A78B2E771FEAF66200DF4636 /* MyFriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78B2E761FEAF66200DF4636 /* MyFriendList.swift */; };
+		A78B2E791FEAFF4000DF4636 /* ExtensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78B2E781FEAFF4000DF4636 /* ExtensionDate.swift */; };
 		A79C50861FEAD45C001AAE5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C50851FEAD45C001AAE5A /* AppDelegate.swift */; };
 		A79C508B1FEAD45C001AAE5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79C50891FEAD45C001AAE5A /* Main.storyboard */; };
 		A79C508D1FEAD45C001AAE5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79C508C1FEAD45C001AAE5A /* Assets.xcassets */; };
@@ -37,6 +45,14 @@
 		A78B2E621FEADCC900DF4636 /* ChatListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatListTableViewCell.xib; sourceTree = "<group>"; };
 		A78B2E641FEADCDC00DF4636 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
 		A78B2E661FEADEB700DF4636 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		A78B2E681FEAE31200DF4636 /* FriendListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListTableViewCell.swift; sourceTree = "<group>"; };
+		A78B2E6A1FEAE32A00DF4636 /* ChatListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListTableViewCell.swift; sourceTree = "<group>"; };
+		A78B2E6C1FEAE33B00DF4636 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		A78B2E6E1FEAED3000DF4636 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		A78B2E701FEAF17100DF4636 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		A78B2E741FEAF64600DF4636 /* MyChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatList.swift; sourceTree = "<group>"; };
+		A78B2E761FEAF66200DF4636 /* MyFriendList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendList.swift; sourceTree = "<group>"; };
+		A78B2E781FEAFF4000DF4636 /* ExtensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDate.swift; sourceTree = "<group>"; };
 		A79C50821FEAD45C001AAE5A /* BRTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BRTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79C50851FEAD45C001AAE5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A79C508A1FEAD45C001AAE5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,6 +108,7 @@
 		A74D19571FEADB5500D9E69D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A78B2E781FEAFF4000DF4636 /* ExtensionDate.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -99,8 +116,11 @@
 		A78B2E5F1FEADC9D00DF4636 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				A78B2E681FEAE31200DF4636 /* FriendListTableViewCell.swift */,
 				A78B2E601FEADCB700DF4636 /* FriendListTableViewCell.xib */,
+				A78B2E6A1FEAE32A00DF4636 /* ChatListTableViewCell.swift */,
 				A78B2E621FEADCC900DF4636 /* ChatListTableViewCell.xib */,
+				A78B2E6C1FEAE33B00DF4636 /* ChatTableViewCell.swift */,
 				A78B2E641FEADCDC00DF4636 /* ChatTableViewCell.xib */,
 			);
 			path = Cells;
@@ -141,8 +161,12 @@
 		A79C509D1FEAD60A001AAE5A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A78B2E741FEAF64600DF4636 /* MyChatList.swift */,
+				A78B2E761FEAF66200DF4636 /* MyFriendList.swift */,
+				A78B2E6E1FEAED3000DF4636 /* Chat.swift */,
 				A79C50991FEAD5AC001AAE5A /* Message.swift */,
 				A74D194A1FEAD70800D9E69D /* MessageContents.swift */,
+				A78B2E701FEAF17100DF4636 /* Photo.swift */,
 				A79C509B1FEAD605001AAE5A /* User.swift */,
 			);
 			path = Model;
@@ -227,13 +251,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A78B2E711FEAF17100DF4636 /* Photo.swift in Sources */,
+				A78B2E771FEAF66200DF4636 /* MyFriendList.swift in Sources */,
 				A74D19591FEADB8A00D9E69D /* ChatListViewController.swift in Sources */,
 				A79C509C1FEAD605001AAE5A /* User.swift in Sources */,
 				A74D194B1FEAD70800D9E69D /* MessageContents.swift in Sources */,
 				A78B2E671FEADEB700DF4636 /* ChatViewController.swift in Sources */,
+				A78B2E751FEAF64600DF4636 /* MyChatList.swift in Sources */,
 				A74D19521FEADB2D00D9E69D /* FriendListViewController.swift in Sources */,
 				A79C509A1FEAD5AC001AAE5A /* Message.swift in Sources */,
+				A78B2E6F1FEAED3000DF4636 /* Chat.swift in Sources */,
+				A78B2E6B1FEAE32A00DF4636 /* ChatListTableViewCell.swift in Sources */,
+				A78B2E6D1FEAE33B00DF4636 /* ChatTableViewCell.swift in Sources */,
 				A79C50861FEAD45C001AAE5A /* AppDelegate.swift in Sources */,
+				A78B2E791FEAFF4000DF4636 /* ExtensionDate.swift in Sources */,
+				A78B2E691FEAE31200DF4636 /* FriendListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
